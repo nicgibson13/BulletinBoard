@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		7C7B78CE22D39DE900E7649E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B78CD22D39DE900E7649E /* AppDelegate.swift */; };
-		7C7B78D022D39DE900E7649E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B78CF22D39DE900E7649E /* ViewController.swift */; };
 		7C7B78D322D39DE900E7649E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7B78D122D39DE900E7649E /* Main.storyboard */; };
 		7C7B78D522D39DEC00E7649E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7B78D422D39DEC00E7649E /* Assets.xcassets */; };
 		7C7B78D822D39DEC00E7649E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7B78D622D39DEC00E7649E /* LaunchScreen.storyboard */; };
+		7C7B78E222D39FC600E7649E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B78E122D39FC600E7649E /* Message.swift */; };
+		7CDBD0BF22D3A4D1009BD7DD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDBD0BE22D3A4D1009BD7DD /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C7B78CA22D39DE900E7649E /* BulletinBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletinBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7B78CD22D39DE900E7649E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C7B78CF22D39DE900E7649E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C7B78D222D39DE900E7649E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C7B78D422D39DEC00E7649E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C7B78D722D39DEC00E7649E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C7B78D922D39DEC00E7649E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7B78E122D39FC600E7649E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7CDBD0BC22D3A4CC009BD7DD /* BulletinBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BulletinBoard.entitlements; sourceTree = "<group>"; };
+		7CDBD0BE22D3A4D1009BD7DD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDBD0BF22D3A4D1009BD7DD /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				7C7B78CC22D39DE900E7649E /* BulletinBoard */,
 				7C7B78CB22D39DE900E7649E /* Products */,
+				7CDBD0BD22D3A4D1009BD7DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +59,47 @@
 		7C7B78CC22D39DE900E7649E /* BulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
+				7CDBD0BC22D3A4CC009BD7DD /* BulletinBoard.entitlements */,
+				7C7B78E322D39FCA00E7649E /* Models */,
+				7C7B78E022D39E4E00E7649E /* Storyboards */,
+				7C7B78DF22D39E4100E7649E /* Resources */,
+			);
+			path = BulletinBoard;
+			sourceTree = "<group>";
+		};
+		7C7B78DF22D39E4100E7649E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7C7B78CD22D39DE900E7649E /* AppDelegate.swift */,
-				7C7B78CF22D39DE900E7649E /* ViewController.swift */,
-				7C7B78D122D39DE900E7649E /* Main.storyboard */,
 				7C7B78D422D39DEC00E7649E /* Assets.xcassets */,
 				7C7B78D622D39DEC00E7649E /* LaunchScreen.storyboard */,
 				7C7B78D922D39DEC00E7649E /* Info.plist */,
 			);
-			path = BulletinBoard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C7B78E022D39E4E00E7649E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7C7B78D122D39DE900E7649E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7C7B78E322D39FCA00E7649E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C7B78E122D39FC600E7649E /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CDBD0BD22D3A4D1009BD7DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBD0BE22D3A4D1009BD7DD /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +134,14 @@
 				TargetAttributes = {
 					7C7B78C922D39DE900E7649E = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C7B78D022D39DE900E7649E /* ViewController.swift in Sources */,
 				7C7B78CE22D39DE900E7649E /* AppDelegate.swift in Sources */,
+				7C7B78E222D39FC600E7649E /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BulletinBoard/BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
 				INFOPLIST_FILE = BulletinBoard/Info.plist;
@@ -300,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BulletinBoard/BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
 				INFOPLIST_FILE = BulletinBoard/Info.plist;
