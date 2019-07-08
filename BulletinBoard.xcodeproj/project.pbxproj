@@ -13,6 +13,8 @@
 		7C7B78D822D39DEC00E7649E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7B78D622D39DEC00E7649E /* LaunchScreen.storyboard */; };
 		7C7B78E222D39FC600E7649E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B78E122D39FC600E7649E /* Message.swift */; };
 		7CDBD0BF22D3A4D1009BD7DD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDBD0BE22D3A4D1009BD7DD /* CloudKit.framework */; };
+		7CDBD0C122D3A659009BD7DD /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBD0C022D3A659009BD7DD /* MessageController.swift */; };
+		7CDBD0C422D3A7BA009BD7DD /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBD0C322D3A7BA009BD7DD /* CloudKitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		7C7B78E122D39FC600E7649E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7CDBD0BC22D3A4CC009BD7DD /* BulletinBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BulletinBoard.entitlements; sourceTree = "<group>"; };
 		7CDBD0BE22D3A4D1009BD7DD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7CDBD0C022D3A659009BD7DD /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		7CDBD0C322D3A7BA009BD7DD /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				7CDBD0BC22D3A4CC009BD7DD /* BulletinBoard.entitlements */,
+				7CDBD0C522D3A7CA009BD7DD /* Helpers+Extensions */,
+				7CDBD0C222D3A65E009BD7DD /* Model Controllers */,
 				7C7B78E322D39FCA00E7649E /* Models */,
 				7C7B78E022D39E4E00E7649E /* Storyboards */,
 				7C7B78DF22D39E4100E7649E /* Resources */,
@@ -100,6 +106,22 @@
 				7CDBD0BE22D3A4D1009BD7DD /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CDBD0C222D3A65E009BD7DD /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBD0C022D3A659009BD7DD /* MessageController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		7CDBD0C522D3A7CA009BD7DD /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBD0C322D3A7BA009BD7DD /* CloudKitController.swift */,
+			);
+			path = "Helpers+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7B78CE22D39DE900E7649E /* AppDelegate.swift in Sources */,
+				7CDBD0C122D3A659009BD7DD /* MessageController.swift in Sources */,
+				7CDBD0C422D3A7BA009BD7DD /* CloudKitController.swift in Sources */,
 				7C7B78E222D39FC600E7649E /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
