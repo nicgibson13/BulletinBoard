@@ -331,7 +331,7 @@
 				CODE_SIGN_ENTITLEMENTS = BulletinBoard/BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +350,7 @@
 				CODE_SIGN_ENTITLEMENTS = BulletinBoard/BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
